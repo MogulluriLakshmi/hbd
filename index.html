@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css animations</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<style type="text/css">
+		body
+		{
+			background: linear-gradient(45deg,orange,white,green,purple,pink,magenta,yellow,coral);
+			width: 100%;
+			margin: 0px;
+		}
+		div
+		{
+			position: relative;
+			top: 100px;
+			left: 100px;
+			margin-right: 90px;
+			margin: 0px;
+		}
+		div span h1
+		{
+			font-size: 40px;
+			font-family: 'comic sans ms',sans-serif;
+		}
+		div span
+		{
+			display: inline-block;
+			background-color: black;
+			margin: 20px;
+			box-shadow: 0px 0px 10px white;
+			animation: bounce 1s linear 0s infinite;
+		}
+		div img
+		{
+		    border-radius: 50px;
+		    border: 10px solid royalblue;
+		    box-shadow: 0 0 100px tomato;
+			animation: all 4s linear 0s infinite;
+		}
+		@keyframes bounce
+		{
+			0%,100%
+			{
+				transform: translateY(0px);
+			}
+			50%
+			{
+				transform: translateY(-100px);
+			}
+		}
+		div span:first-child
+		{
+			background-color: magenta;
+			animation-delay: 0.1s;
+		}
+		div span:nth-child(2)
+		{
+			background-color: blue;
+			animation-delay: 0.2s;
+		}
+		div span:nth-child(3)
+		{
+			background-color: violet;
+			animation-delay: 0.3s;
+		}
+		div span:nth-child(4)
+		{
+			background-color: cyan;
+			animation-delay: 0.4s;
+		}
+		div span:nth-child(5)
+		{
+			background-color: red;
+			animation-delay: 0.5s;
+		}
+		div span:nth-child(6)
+		{
+			background-color: brown;
+			animation-delay: 0.6s;
+		}
+		div span:nth-child(7)
+		{
+			background-color: orange;
+			animation-delay: 0.7s;
+		}
+		div span:nth-child(8)
+		{
+			background-color: lightsalmon;
+			animation-delay: 0.8s;
+		}
+		div span:nth-child(9)
+		{
+			background-color: indigo;
+			animation-delay: 0.5s;
+		}
+		div span:nth-child(10)
+		{
+			background-color: blueviolet;
+			animation-delay: 0.9s;
+		}
+		div span:nth-child(11)
+		{
+			background-color: burlywood;
+			animation-delay: 0.5s;
+		}
+		div span:nth-child(12)
+		{
+			background-color: chartreuse;
+			animation-delay: 0.6s;
+		}
+		div span:nth-child(13)
+		{
+			background-color: chocolate;
+			animation-delay: 0.7s;
+		}
+		div span:nth-child(14)
+		{
+			background-color: crimson;
+			animation-delay: 0.8s;
+		}
+		div span:last-child
+		{
+			background-color: yellow;
+			animation-delay: 1.0s;
+		}
+		footer h1,h2,span
+		{
+			text-align: center;
+			color: white;
+			font-family: 'comic sans ms',sans-serif;
+			animation: zoom 5s linear 0s infinite;
+		}
+		@keyframes zoom
+		{
+			0%,100%
+			{
+				transform: translateX(100px);
+			}
+			50%
+			{
+				transform: translateX(100px);
+			}
+		}
+		@media (max-width: 1200px)
+		{
+			div img
+			{
+				display: block;
+			}
+		} 
+	</style>
+</head>
+<body>
+  <div>
+  	<span><h1 style="color: blue;">H</h1></span>
+  	<span><h1 style="color: cyan;">A</h1></span>
+  	<span><h1 style="color: red;">P</h1></span>
+  	<span><h1 style="color: lightsalmon;">P</h1></span>
+  	<span><h1 style="color: green;">Y</h1></span>
+  	<span><h1 style="color: violet;">B'</h1></span>
+  	<span><h1 style="color: brown;">D</h1></span>
+  	<span><h1 style="color: white;">A</h1></span>
+  	<span><h1 style="color: crimson;">Y</h1></span><br>
+  	<span><h1 style="color: gold">P</h1></span>
+  	<span><h1 style="color: darkcyan;">R</h1></span>
+  	<span><h1 style="color: dodgerblue;">A</h1></span>
+  	<span><h1 style="color: white;">B</h1></span>
+  	<span><h1 style="color: fuchsia;">H</h1></span>
+  	<span><h1 style="color: red;">A</h1></span><br><br>
+  	<img src="Hpbd.jpg" width="700px" height="450px" class="aniamte__animated animate__zoomIn"><br><br>
+ <img src="p2.jpg" width="750px" height="1000px" class="animate__animated animate__heartBeat"><br><br>
+ <img id="a" src="b.png" width="700px" height="500px" class="animate__animated animate__shakeX"><br><br>
+ <img src="hbd.jpg" width="700px" height="500px" class="aniamte__animated animate__wobble">
+  </div><br><br><br><br><br>
+  <footer><h1 class="animate__animated animate__flipInX" style="color: deeppink">Wishes<span style="color: chartreuse"><span style="color: black;">@</span>2021</h1>
+  	<h2 class="animate__animated animate__tada" style="color: white">May God give you every possible reason to smile and be happy always! My love for you cannot be described in words. Happy birthday to the most caring brother. I love you!</h2>
+		<h2 class="animate__animated animate__zoomIn" style="color: violet">Developed By
+			<span style="color: rgb(36,143,53);"> L</span>
+		    <span style="color: orange;"> A</span>
+	        <span style="color: red;"> K</span>
+            <span style="color: rgb(47,60,214);"> K</span>
+            <span style="color: black;"> I</span>
+</h2></footer>
+</body>
+</html>
